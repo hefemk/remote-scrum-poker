@@ -1,17 +1,12 @@
 <template>
-    <Login />
+    <router-view></router-view>
 </template>
 
 <script lang="ts">
-    import { Options, Vue } from "vue-class-component";
-    import Login from "./components/Login.vue";
+    import { Vue } from "vue-class-component";
 
-    @Options({
-        components: {
-            Login,
-        },
-    })
-    export default class App extends Vue {}
+    export default class App extends Vue {
+    }
 </script>
 
 <style>

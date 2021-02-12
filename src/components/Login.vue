@@ -9,7 +9,9 @@
         props: {},
     })
     export default class Login extends Vue {
-        signIn(): void {}
+        signIn(): void {
+            this.$router.push('/table');
+        }
     }
 </script>
 
