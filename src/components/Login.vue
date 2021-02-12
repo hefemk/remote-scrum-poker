@@ -8,7 +8,7 @@
     @Options({
         props: {},
     })
-    export default class HelloWorld extends Vue {
+    export default class Login extends Vue {
         signIn(): void {}
     }
 </script>
