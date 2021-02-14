@@ -31,7 +31,6 @@
                     poker.played = true;
                 }
             });
-            console.log(this.pokerEls);
         }
 
         setItemRef(el: any) {

@@ -2,7 +2,12 @@
     <span class="card text-center"
         :class="{ active: played }"
         @click="play()">
-        {{ point }}
+        <span v-if="mask">
+            ⏳
+        </span>
+        <span v-else>
+            {{ point }}
+        </span>
     </span>
 </template>
 
@@ -13,6 +18,10 @@ import { Options, Vue } from 'vue-class-component';
             point: {
                 type: String,
                 required: true
+            },
+            mask: {
+                type: Boolean,
+                required: false
             },
         },
         emits: ['on-card-play']
