@@ -23,7 +23,7 @@
             firebase.auth().onAuthStateChanged((user) => {
                 if (user) {
                     this.isSignedIn = true;
-                    this.$router.push('/table');
+                    this.$router.push('/lobby');
                 } else {
                     this.isSignedIn = false;
                     this.$router.push('/login');

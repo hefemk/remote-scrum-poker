@@ -1,8 +1,10 @@
-import LoginComponent from './components/Login.vue';
-import HandCardsComponent from './components/HandCards.vue';
+import Login from './components/Login.vue';
+import Lobby from './components/Lobby.vue';
+import PokerTable from './components/PokerTable.vue';
 
 export const routes = [
-    { path: '/', component: LoginComponent },
-    { path: '/login', component: LoginComponent },
-    { path: '/table', component: HandCardsComponent },
+    { path: '/', component: Login },
+    { path: '/login', component: Login },
+    { path: '/lobby', component: Lobby },
+    { path: '/table/:id', component: PokerTable },
 ];
